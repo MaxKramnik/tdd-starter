@@ -1,0 +1,27 @@
+{
+  "name": "tdd-example-app",
+  "version": "0.0.1",
+  "description": "Different types of tests in one place using mocha should istanbul supertest zombie",
+  "author": "Max Kramnik",
+  "engines": {
+    "node": ">= 0.10.25"
+  },
+  "dependencies": {
+    "glob": "~3.2.8",
+    "express": "~3.4.8",
+    "swig": "~1.3.2"
+  },
+  "devDependencies": {
+    "mocha": "~1.17.1",
+    "istanbul": "~0.2.4",
+    "should": "~3.1.2",
+    "supertest": "~0.9.0",
+    "zombie": "~2.0.0-alpha29",
+    "casperjs": "~1.1.0-beta3",
+    "jshint": "~2.4.3"
+  },
+  "scripts": {
+    "start": "node app",
+    "test": "make test"
+  }
+}

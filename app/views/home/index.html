@@ -1,0 +1,19 @@
+{% extends '../layout.html' %}
+
+{% block content %}
+	<h1>Animals:</h1>
+	<ul id="animals">
+		{% for animal in animals %}
+		<li>{{ animal.name }} -- {{ animal.group }}</li>
+		{% endfor %}
+	</ul>
+	<form id="new-animal" action="/add" method="POST">
+		<label>Enter Name: <input type="text" autofocus name="new-animal-name" /></label>
+		<label>Enter Group: <input type="text" name="new-animal-group" /></label>
+		<input type="submit" value="Add New Animal" />
+	</form>
+{% endblock %}
+{% block javascripts %}
+	{% parent %}
+	<script src="/js/animals.js"></script>
+{% endblock %}
